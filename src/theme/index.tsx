@@ -9,10 +9,12 @@ declare module '@mui/material/styles' {
     md: true
     lg: true
     xl: true
+    xl2: true
   }
 
   interface CommonColors {
     mainBg: string
+    heroBg: string
   }
 
   // interface Palette {
@@ -36,10 +38,11 @@ const MuiThemeProvider = ({ children }: any) => {
       values: {
         xs: 0,
         sx: 450,
-        sm: 600,
-        md: 900,
-        lg: 1200,
-        xl: 1536,
+        sm: 640,
+        md: 768,
+        lg: 1024,
+        xl: 1280,
+        xl2: 1536,
       }
     },
     palette: {
@@ -48,14 +51,15 @@ const MuiThemeProvider = ({ children }: any) => {
         black: '#000',
         white: '#fff',
 
-        mainBg: '#001559',
+        mainBg: '#ffffff',
+        heroBg: '#020210',
       },
 
       // mainBg: { main: '#141416', light: '#24262f', contrastText: "#fff" },
       // primary: { main: '#fff', light: '#f55b00', dark: '#1e0500', contrastText: 'rgba(0,0,0,0.87)' },
     },
     typography: {
-      allVariants: { color: "#ffffff" },
+      allVariants: { color: "#272727" },
       htmlFontSize: 16,
       fontSize: 16,
       fontWeightLight: 300,

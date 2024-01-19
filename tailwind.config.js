@@ -25,10 +25,11 @@ module.exports = {
   theme: {
     screens: {
       sx: '450px',
-      sm: '600px',
-      md: '900px',
-      lg: '1200px',
-      xl: '1536px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xl2: '1536px',
     },
 
     extend: {
